@@ -1,2 +1,0 @@
-# Provides Python requirements
-netaddr
