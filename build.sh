@@ -14,6 +14,19 @@ export EE_IMAGE_VERSION_MINOR="0"
 export EE_IMAGE_VERSION_PATCH="1"
 
 ###################
+if [ ! $(which ansible-builder >> /dev/null) ]; then
+  echo "ERROR! ansible-builder not found." && exit 1
+fi
+
+if [ ! $(which docker >> /dev/null) ]; then
+  echo "ERROR! docker not found." && exit 1
+fi
+
+if [ ! $(which awx >> /dev/null) ]; then
+  echo "ERROR! awx cli not found." && exit 1
+fi
+
+###################
 git clone "$GIT_REPO_AWX_EE"
 cd awx-ee
 
