@@ -1,7 +1,7 @@
 ## Building environment
 ```bash
-apt install docker.io
-apt install python3-pip
+apt-get install -y docker.io
+apt-get install -y python3-pip
 pip install ansible-builder
 pip install "https://releases.ansible.com/ansible-tower/cli/ansible-tower-cli-latest.tar.gz"
 
