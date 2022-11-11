@@ -9,7 +9,7 @@ export DOCKER_HUB_USERNAME="albe83"
 export DOCKER_HUB_PASSWORD="xxxx"
 docker login --username="$DOCKER_HUB_USERNAME" --password="$DOCKER_HUB_PASSWORD"
 
-export TOWER_HOST="https://awx.example.org"
+export TOWER_HOST="http://127.0.0.1:30080"
 export TOWER_USERNAME="admin"
 export TOWER_PASSWORD="zzz"
 export TOWER_OAUTH_TOKEN=$(awx login -f human)
