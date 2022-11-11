@@ -14,15 +14,15 @@ export EE_IMAGE_VERSION_MINOR="0"
 export EE_IMAGE_VERSION_PATCH="1"
 
 ###################
-if [ ! $(which ansible-builder >> /dev/null) ]; then
+if [ ! $(which ansible-builder) ]; then
   echo "ERROR! ansible-builder not found." && exit 1
 fi
 
-if [ ! $(which docker >> /dev/null) ]; then
+if [ ! $(which docker) ]; then
   echo "ERROR! docker not found." && exit 1
 fi
 
-if [ ! $(which awx >> /dev/null) ]; then
+if [ ! $(which awx) ]; then
   echo "ERROR! awx cli not found." && exit 1
 fi
 
