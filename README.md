@@ -32,7 +32,7 @@ cd awx-ee
 
 ```
 
-## Set image name
+## Build image
 ```bash
 export EE_IMAGE_NAME_MAJOR="$EE_IMAGE_NAME:v$EE_IMAGE_VERSION_MAJOR"
 export EE_IMAGE_NAME_MINOR="$EE_IMAGE_NAME_MAJOR.$EE_IMAGE_VERSION_MINOR"
